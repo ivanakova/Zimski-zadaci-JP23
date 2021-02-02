@@ -11,8 +11,17 @@ public class ProstiBrojevi {
 		System.out.println("Drugi broj:");
 		int b = scan.nextInt();
 		System.out.println("Prime numbers between "+a+" and "+b+" are ");
-		scan.close();		
+		scan.close();	
 		
+		int p=0;
+		
+		if(a>b) {
+			p=a;
+			a=b;
+			b=p;
+		}	
+		
+
 		for(int i=a; i<=b; i++) {
 			int count=0;
 			for(int j=1;j<=i; j++) {
